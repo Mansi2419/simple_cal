@@ -1,0 +1,28 @@
+{
+    "name": "Calculator Extension",
+    "description": "Learning all about Chrome Extensions Manifest Version 3!",
+    "version": "0.1.0",
+    "manifest_version": 3,
+    
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_icon": "icon.png",
+        "default_popup": "index.html"
+    },
+
+    "icons": {
+        "128": "icon128.png"
+    },
+
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting",
+        "tabs"
+    ],
+    "host_permissions": [
+        "https://www.google.com/*"
+    ]
+}
